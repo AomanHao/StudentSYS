@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<!-- 关闭strut2标签自带的布局样式 -->
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.ui.templateDir" value="template"></constant>
+	<constant name="struts.ui.templateSuffix" value="ftl"></constant>
+
+	<package name="com.duang.action" extends="struts-default">
+		
+		<action name="getAllStudent" class="com.duang.action.StudentAction" method="getAllStudent">
+			<result name="success">/studentlist.jsp</result>
+		</action>
+		
+		<action name="preAddStudent" class="com.duang.action.StudentAction" method="preAddStudent">
+			<result name="success">/studentadd.jsp</result>
+		</action>
+		
+		<action name="addStudent" class="com.duang.action.StudentAction" method="addStudent">
+			<result name="success">/studentlist.jsp</result>
+			<result name="input">/studentadd.jsp</result>
+		</action>
+		
+		<action name="preModifyStudent" class="com.duang.action.StudentAction" method="preModifyStudent">
+			<result name="success">/studentmodify.jsp</result>
+		</action>
+		
+		<action name="modifyStudent" class="com.duang.action.StudentAction" method="modifyStudent">
+			<result name="success">/studentlist.jsp</result>
+			<result name="input">/studentmodify.jsp</result>
+		</action>
+		
+		<action name="delStudent" class="com.duang.action.StudentAction" method="delStudent">
+			<result name="success">/studentlist.jsp</result>
+			<result name="input">/studentlist.jsp</result>
+		</action>
+		
+		<action name="getStudentInfoById" class="com.duang.action.StudentAction" method="getStudentInfoById">
+			<result name="success">/studentdetail.jsp</result>
+			<result name="input">/studentlist.jsp</result>
+		</action>
+		
+		
+		<action name="getAllUser" class="com.duang.action.UserAction" method="getAllUser">
+			<result name="success">/userlist.jsp</result>
+			<result name="input">/userlist.jsp</result>
+		</action>
+		
+		<action name="addUser" class="com.duang.action.UserAction" method="addUser">
+			<result name="success">/userlist.jsp</result>
+			<result name="input">/useradd.jsp</result>
+		</action>
+		
+		<action name="delUser" class="com.duang.action.UserAction" method="delUser">
+			<result name="success">/userlist.jsp</result>
+			<result name="input">/userlist.jsp</result>
+		</action>
+		
+		<action name="preModifyUser" class="com.duang.action.UserAction" method="preModifyUser">
+			<result name="success">/usermodify.jsp</result>
+		</action>
+		
+		<action name="modifyUser" class="com.duang.action.UserAction" method="modifyUser">
+			<result name="success">/userlist.jsp</result>
+			<result name="input">/usermodify.jsp</result>
+		</action>
+		
+		<action name="userLogin" class="com.duang.action.UserAction" method="userLogin">
+			<result name="success">/index.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		
+		
+		<action name="getAllClass" class="com.duang.action.ClassAction" method="getAllClass">
+			<result name="success">/classlist.jsp</result>
+			<result name="input">/classlist.jsp</result>
+		</action>
+		
+		<action name="addClass" class="com.duang.action.ClassAction" method="addClass">
+			<result name="success">/classlist.jsp</result>
+			<result name="input">/classadd.jsp</result>
+		</action>
+		
+		<action name="delClass" class="com.duang.action.ClassAction" method="delClass">
+			<result name="success">/classlist.jsp</result>
+			<result name="input">/classlist.jsp</result>
+		</action>
+		
+		<action name="preModifyClass" class="com.duang.action.ClassAction" method="preModifyClass">
+			<result name="success">/classmodify.jsp</result>
+		</action>
+		
+		<action name="modifyClass" class="com.duang.action.ClassAction" method="modifyClass">
+			<result name="success">/classlist.jsp</result>
+			<result name="input">/classmodify.jsp</result>
+		</action>
+		
+		
+		
+		<action name="getAllExam" class="com.duang.action.ExamAction" method="getAllExam">
+			<result name="success">/examlist.jsp</result>
+			<result name="input">/examlist.jsp</result>
+		</action>
+		
+		<action name="addExam" class="com.duang.action.ExamAction" method="addExam">
+			<result name="success">/examlist.jsp</result>
+			<result name="input">/examadd.jsp</result>
+		</action>
+		
+		<action name="preModifyExam" class="com.duang.action.ExamAction" method="preModifyExam">
+			<result name="success">/exammodify.jsp</result>
+		</action>
+		
+		<action name="modifyExam" class="com.duang.action.ExamAction" method="modifyExam">
+			<result name="success">/examlist.jsp</result>
+			<result name="input">/exammodify.jsp</result>
+		</action>
+		
+		<action name="delExam" class="com.duang.action.ExamAction" method="delExam">
+			<result name="success">/examlist.jsp</result>
+			<result name="input">/examlist.jsp</result>
+		</action>
+		
+		<action name="getExamInfoById" class="com.duang.action.ExamAction" method="getExamInfoById">
+			<result name="success">/examdetail.jsp</result>
+			<result name="input">/examlist.jsp</result>
+		</action>
+		
+		
+		
+		<action name="getAllGrade" class="com.duang.action.GradeAction" method="getAllGrade">
+			<result name="success">/gradelist.jsp</result>
+			<result name="input">/gradelist.jsp</result>
+		</action>
+		
+		<action name="getAllGradeOrderByExamId" class="com.duang.action.GradeAction" method="getAllGradeOrderByExamId">
+			<result name="success">/gradelist.jsp</result>
+			<result name="input">/gradelist.jsp</result>
+		</action>
+		
+		<action name="getAllGradeOrderByStuId" class="com.duang.action.GradeAction" method="getAllGradeOrderByStuId">
+			<result name="success">/gradelist.jsp</result>
+			<result name="input">/gradelist.jsp</result>
+		</action>
+		
+		<action name="preAddGrade" class="com.duang.action.GradeAction" method="preAddGrade">
+			<result name="success">/gradeadd.jsp</result>
+			<result name="input">/gradelist.jsp</result>
+		</action>
+		
+		<action name="addGrade" class="com.duang.action.GradeAction" method="addGrade">
+			<result name="success">/gradelist.jsp</result>
+			<result name="input">/gradeadd.jsp</result>
+		</action>
+		
+		<action name="preModifyGrade" class="com.duang.action.GradeAction" method="preModifyGrade">
+			<result name="success">/grademodify.jsp</result>
+		</action>
+		
+		
+		<action name="modifyGrade" class="com.duang.action.GradeAction" method="modifyGrade">
+			<result name="success">/gradelist.jsp</result>
+			<result name="input">/exammodify.jsp</result>
+		</action>
+		
+		<action name="delGrade" class="com.duang.action.GradeAction" method="delGrade">
+			<result name="success">/gradelist.jsp</result>
+			<result name="input">/examlist.jsp</result>
+		</action>
+		
+		<action name="getGradeInfoById" class="com.duang.action.GradeAction" method="getGradeInfoById">
+			<result name="success">/examdetail.jsp</result>
+			<result name="input">/gradelist.jsp</result>
+		</action>
+	</package>
+
+</struts>
+  

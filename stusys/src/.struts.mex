@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="com.duang.action" location="570,328" size="3395,595">
+    <action name="getAllStudent" location="3181,58" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentlist.jsp" />
+      </result>
+    </action>
+    <action name="preAddStudent" location="3181,478" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentadd.jsp" />
+      </result>
+    </action>
+    <action name="addStudent" location="2936,468" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="studentadd.jsp" />
+      </result>
+    </action>
+    <action name="preModifyStudent" location="2691,478" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentmodify.jsp" />
+      </result>
+    </action>
+    <action name="modifyStudent" location="2446,468" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="studentmodify.jsp" />
+      </result>
+    </action>
+    <action name="delStudent" location="2201,468" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="studentlist.jsp" />
+      </result>
+    </action>
+    <action name="getStudentInfoById" location="1956,468" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="studentdetail.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="studentlist.jsp" />
+      </result>
+    </action>
+    <action name="getAllUser" location="1711,468" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="userlist.jsp" />
+      </result>
+    </action>
+    <action name="addUser" location="66,468" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="useradd.jsp" />
+      </result>
+    </action>
+    <action name="delUser" location="66,363" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="userlist.jsp" />
+      </result>
+    </action>
+    <action name="preModifyUser" location="66,268" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="usermodify.jsp" />
+      </result>
+    </action>
+    <action name="modifyUser" location="66,153" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="usermodify.jsp" />
+      </result>
+    </action>
+    <action name="getAllClass" location="311,153" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="classlist.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="classlist.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="studentlist.jsp" path="/studentlist.jsp" location="2770,20" size="150,55" />
+  <webResource name="studentadd.jsp" path="/studentadd.jsp" location="3505,965" size="150,55" />
+  <webResource name="studentmodify.jsp" path="/studentmodify.jsp" location="3015,965" size="150,55" />
+  <webResource name="studentdetail.jsp" path="/studentdetail.jsp" location="2525,965" size="150,55" />
+  <webResource name="userlist.jsp" path="/userlist.jsp" location="75,90" size="150,55" />
+  <webResource name="useradd.jsp" path="/useradd.jsp" location="355,790" size="150,55" />
+  <webResource name="usermodify.jsp" path="/usermodify.jsp" location="355,475" size="150,55" />
+  <webResource name="classlist.jsp" path="/classlist.jsp" location="1895,160" size="150,55" />
+  <webResource name="classadd.jsp" path="/classadd.jsp" location="880,230" size="150,55" />
+  <webResource name="classmodify.jsp" path="/classmodify.jsp" location="1615,230" size="150,55" />
+</Struts2Diagram>
+
